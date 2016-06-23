@@ -83,3 +83,8 @@ where:
         
         For sentiment clustering with 2 clusters, if we assume positive is dimension 1, then 
         if a word i is positive, sf0(i)=[1,0]; if a word i is negative, sf0[i]=[0,1], and for other words that we do not have any prior knowledge, sf0[i]=[0.5,0.5] or sf0[i]=[0,0].
+
+
+# Graph Summarization
+ Please go to the WiKi page  for more details
+ 

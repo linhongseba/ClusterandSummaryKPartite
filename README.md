@@ -1,4 +1,4 @@
-# ClusterandSummaryKPartite
+# Clustering and Graph Summarization on K-Partite Graphs
 Clustering and Summarization Softwares on K-Partite Graphs
 
 #Clustering

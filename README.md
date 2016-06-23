@@ -3,19 +3,19 @@ Clustering and Summarization Softwares on K-Partite Graphs
 
 #Clustering
 # Table of Content
-- [Publication](##related-publications)
-- [Code Location](##code-location)
-- [Usage](##usage)
-- [Q and A](##common-questions)
+- [Publication](#related-publications)
+- [Code Location](#code-location)
+- [Usage](#usage)
+- [Q and A](#common-questions)
 
-##Related Publications
+## Related Publications
 
 Linhong Zhu, Aram Galstyan, James Cheng, and Kristina Lerman. Tripartite Graph Clustering for Dynamic Sentiment Analysis on Social Media. ACM SIGMOD 2014: 1531-1542.
 
 Linhong Zhu, Aram Galstyan, James Cheng, Kristina Lerman:
 Tripartite Graph Clustering for Dynamic Sentiment Analysis on Social Media. CoRR abs/1402.6010 (2014)
 
-##Code location
+## Code location
 The matlab implementation for clustering on Tripartite graph is located within folder Triclustering
 
 ## Usage

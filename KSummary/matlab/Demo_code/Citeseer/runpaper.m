@@ -1,0 +1,28 @@
+rng(1247)
+t=cputime;
+load author2attr.txt;
+load paper2word.txt;
+load author2paper.txt;
+load paper2paper.txt;
+load author2author.txt;
+A=cell(4,4);
+A{1,2}=spconvert(author2paper);
+A{1,3}=spconvert(author2attr);
+A{2,4}=spconvert(paper2word);
+A{2,4}=A{2,4}./max(max(A{2,4}));
+n=size(A{1,2},1);
+m=size(A{1,2},2);
+sim=sparse(author2author(:,1),author2author(:,2),author2author(:,3),n,n);
+sim=normalize_X(sim);
+sim2=sparse(paper2paper(:,1),paper2paper(:,2),paper2paper(:,3),m,m);
+sim2=normalize_X(sim2);
+A{1,1}=sim;
+A{2,2}=sim2;
+addpath(genpath('../../../'));
+[~,C,~]=GraphSumPlus(A);
+name=cell(4,1);
+name{1,1}='authorcluster-search.txt';
+name{2,1}='papercluster-search.txt';
+SaveclusterSparse(C, name);
+e=cputime-t;
+disp(e);
